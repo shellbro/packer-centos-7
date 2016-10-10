@@ -30,7 +30,7 @@
         "only": [
             "virtualbox-iso"
         ],
-        "output": "builds/{{.Provider}}-centos7.box",
+        "output": "builds/{{.Provider}}-centos-7.box",
         "type": "vagrant"
     }]
 }
