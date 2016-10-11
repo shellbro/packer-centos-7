@@ -27,6 +27,7 @@
         "vm_name": "CentOS 7"
     }],
     "post-processors": [{
+        "compression_level": 9,
         "only": [
             "virtualbox-iso"
         ],
