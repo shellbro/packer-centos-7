@@ -33,5 +33,10 @@
         ],
         "output": "builds/{{.Provider}}-centos-7.box",
         "type": "vagrant"
+    }],
+    "provisioners": [{
+        "playbook_file": "ansible/playbook.yml",
+        "sftp_command": "/usr/libexec/openssh/sftp-server -e",
+        "type": "ansible"
     }]
 }
