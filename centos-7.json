@@ -10,11 +10,10 @@
         "iso_checksum": "f90e4d28fa377669b2db16cbcb451fcb9a89d2460e3645993e30e137ac37d284",
         "iso_checksum_type": "sha256",
         "iso_url": "http://ftp.vectranet.pl/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1511.iso",
-        "shutdown_command": "echo 'vagrant' | sudo -S /usr/sbin/poweroff",
+        "shutdown_command": "/usr/sbin/poweroff",
         "ssh_password": "vagrant",
-        "ssh_pty": true,
         "ssh_timeout": "30m",
-        "ssh_username": "vagrant",
+        "ssh_username": "root",
         "type": "virtualbox-iso",
         "vboxmanage": [
             [
@@ -35,7 +34,7 @@
         "type": "vagrant"
     }],
     "provisioners": [{
-        "playbook_file": "ansible/playbook.yml",
+        "playbook_file": "ansible/centos-7.yml",
         "sftp_command": "/usr/libexec/openssh/sftp-server -e",
         "type": "ansible"
     }]

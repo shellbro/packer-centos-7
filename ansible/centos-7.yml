@@ -2,4 +2,3 @@
 - hosts: default
   roles:
     - name: os-update
-    - become: yes
