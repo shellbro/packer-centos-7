@@ -2,3 +2,4 @@
 - hosts: default
   roles:
     - name: os-update
+    - name: vagrant-box
