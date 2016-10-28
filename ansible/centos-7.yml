@@ -1,5 +1,5 @@
 ---
 - hosts: default
   roles:
-    - name: os-update
-    - name: vagrant-box
+    - name: shellbro.os-update
+    - name: shellbro.vagrant-box
